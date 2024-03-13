@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>!Grade Calculator for Students!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--from getBootStrap.com
+//Bootstrap is html,css and js library that focusses on simplifying the development of informative web pages-->
+</head>
+
+<body style="background-color:khaki; font-family: Arial, Helvetica, sans-serif;">
+    <div class="container fw-bold">
+        <div class="row">
+            <div class="col-12 m-auto bg-dark text-white p-4">
+                <h3 class="text-center " style="border: 5px;"><b>!Grade Calculating System!</h3>
+            </div>
+        </div>
+        <form class="row" id="my_name">
+            <div class="col-lg-12 bg-white p-5 col-md-12 m-auto d-flex justify-content-around">
+                <div class="col-md-5">
+                    <div class="ourname">
+                        *Enter Your Name: <input type="text" id="myname" placeholder="Enter name" required>
+                        <h2>---------------------------------</h2>
+                    </div>
+                    <div>
+                        <div class="book1 mb-2">
+                            <label>Subject 1:</label>
+                            <input class="form-control" id="subone" type="number" name="" placeholder="Enter marks">
+                        </div>
+                        <div class="book2 mb-2">
+                            <label>Subject 2:</label>
+                            <input class="form-control" id="subtwo" type="number" name="" placeholder="Enter marks">
+                        </div>
+                        <div class="book3 mb-2">
+                            <label>Subject 3:</label>
+                            <input class="form-control" id="subthree" type="number" name="" placeholder="Enter marks">
+                        </div>
+                        <div class="book4 mb-2">
+                            <label>Subject 4:</label>
+                            <input class="form-control" id="subfour" type="number" name="" placeholder="Enter marks">
+                        </div>
+                        <div class="book5 mb-2">
+                            <label>Subject 5:</label>
+                            <input class="form-control" id="subfive" type="number" name="" placeholder="Enter marks"
+                                required>
+                        </div>
+                        <div>
+                            <button class="btn btn-warning col-12" onclick=" return calculate()">Calculate!</button>
+                        </div><br>
+                        <div>
+                            <button class="btn btn-success col-12" onclick="ResetPage()">Reset!</button>
+                        </div><br>
+                        <div>
+                            <button class="btn btn-secondary col-12" onclick="Add()">Add subject!</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center">
+                    <div>
+                        <table id="mytable" class="table table-bordered border-dark">
+                            <tr>
+                                <td>Total Marks:</td>
+                                <td>500</td>
+                            </tr>
+                            <tr>
+                                <td>Obtained Marks:</td>
+                                <td id="obtain"></td>
+                            </tr>
+                            <tr>
+                                <td>Percentage:</td>
+                                <td id="per"></td>
+                            </tr>
+                            <tr>
+                                <td>Grade:</td>
+                                <td id="grade"></td>
+                            </tr>
+                            <tr>
+                                <td>Remarks:</td>
+                                <td id="remarks"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div></b>
+    <marquee>IT'S JUST A SIMPLE GRADE CALCULATING SYSTEM ! USE AS PER CONVINIENCE.  </marquee>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
